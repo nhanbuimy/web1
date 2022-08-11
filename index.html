@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường THPT Dương Bạch Mai</title>
+    <link rel="stylesheet" href="CSS/THPT.css"/>
+    <link href="anh/ou.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><img src="anh/thptbachmai.jpg"/></div>
+            <div class="tieude"><h1>TRƯỜNG TRUNG HỌC PHỔ THÔNG DƯƠNG BẠCH MAI</h1></div> 
+            <div class="hinh"><img src="vidu/logotruong.jpg"/></div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#">
+                <i class="fa fa-home"></i>
+                <span>TRANG CHỦ</span>
+                </a>
+             </li>
+
+             <li class="sub">
+                <a href="#gioithieu">
+                    <i class="fa fa-mortar-board"></i>
+                    <span>GIỚI THIỆU</span><!--chuyên môn và các tổ, học bổng, hoạt động đoàn trường, nhà trường-->
+                </a>
+                <ul class="menu subcontent">
+                    <li><a href="#">Ban giám hiệu</a></li>
+                    <li><a href="#">Lịch sử về trường</a></li>
+                    <li><a href="#">Cán bộ nhân viên</a></li>
+                </ul>
+             </li>
+
+             <li class="sub">
+                <a href="#">
+                    <i class="fa fa-calendar"></i>
+                <span>TIN TỨC-SỰ KIỆN</span>
+                </a>
+                <ul class="menu subcontent">
+                    <li><a href="#">Kế hoạch năm học</a></li>
+                    <li><a href="#">Tuyển sinh 10</a></li>
+                    <li><a href="#">Cuộc thi</a></li>
+                    <!--<li><a href="#"></a></li>-->
+                </ul>
+             </li>
+            
+             <li class="sub">
+                 <a href="#">
+                    <i class="fa fa-group"></i>
+                <span>CUỘC SỐNG HỌC ĐƯỜNG</span>
+                </a>
+                <ul class="menu subcontent">
+                    <li>
+                        <a href="#">Thời khóa biểu</a>
+                    </li>
+                    <li><a href="#">Tài liệu học tập</a></li>
+                    <!--<li><a href="#">Thư viện</a></li>
+                    <li><a href="#">Dịch vụ bán trú-xe buýt</a></li>
+                    <li><a href="#">Câu chuyện học đường</a></li>-->
+                </ul>
+             </li>
+
+             <li><a href="#">
+                <i class="fa fa-phone"></i>
+                <span>LIÊN HỆ</span>
+                </a>
+             </li>
+
+             <li>
+                <div>
+                    <input type="text" placeholder="Search"/>
+                    <button>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+             </li>
+        </ul>
+</nav>
+
+
+
+
+<article>
+    <div class="act">
+        <marquee direction="left"><h1>Chào mừng đến với trang thông tin điện tử trường THPT Dương Bạch Mai</h1></marquee>
+    </div> 
+    <div id="time" class="Time">
+        <script>
+             var today=new Date();
+             var date=today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+             document.getElementById("time").innerHTML=date;
+        </script>
+    </div>
+</article>
+
+<div id="slideshow">
+    <div class="slide-wrapper">
+      <div class="slide"><img src="anh/python.jpg"></div>
+      <div class="slide"><img src="anh/java.png"></div>
+      <div class="slide"><img src="anh/c++.png"></div>
+    </div>
+</div>
+
+<section>
+    <section>
+        <div class="gioithieu">
+            <h1>GIỚI THIỆU CHUNG</h1>
+            <p>Ngôi nhà chung Dương Bạch Mai luôn tự hào là nơi mỗi học sinh được học cách cho và nhận yêu thương, nơi mỗi học sinh luôn tự tin tỏa sáng, nơi là bệ phóng để mỗi học sinh xây dựng tương lai thành công. Với triết lý giáo dục hướng đến 5 giá trị cốt lõi: “Tôn trọng, Trách nhiệm, Yêu thương, Hợp tác, Sáng tạo”, nhà trường luôn hướng đến mục tiêu giáo dục: “Đào tạo những học sinh có phẩm chất, kiến thức, kĩ năng ngang tầm học sinh các nước tiên tiến trong khu vực, hòa nhập được với cộng đồng thế giới và trở thành công dân toàn cầu, có thể học tập và làm việc thành công ở Việt Nam cũng như ở các nước trên thế giới</p>
+        </div>
+    </section> 
+</section>
+
+<footer></footer>
+
+</body>
+</html>

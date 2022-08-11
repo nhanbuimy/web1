@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: darkcyan;
+    text-shadow: 3px 3px darkblue;
+}
+div {
+    font-style: italic;
+    color: blue;
+    font-size: 20px;
+
+}
+footer {
+    border: 10px;
+    text-align: right;
+    background-color: lightsalmon;
+    padding: 10px 10px;
+    margin: 10px 20px;
+}
+div.anten img {
+    margin-right: auto !important;
+    background-size: 10px !important;
+}
+td.tam img {
+    width: 70%;
+}
+.tams {
+    background-color: lightpink;
+}

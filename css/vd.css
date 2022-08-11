@@ -1,0 +1,74 @@
+* {
+     box-sizing: border-box;
+}
+div.items {
+    display: flex;
+}
+div.item {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    position: relative;
+   
+}
+div.item {
+    width: 32%;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightcoral;
+    border: 2px solid lightseagreen;
+}
+div.label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: gold;
+    padding: 10px;
+    border-radius: 0 20px;
+}
+div.item img {
+    width: 100%;
+}
+/*menu*/
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul.menu {
+  
+    background-color: lightsalmon;
+    /*display: flex; chuyen xuong cai nav > ul.menu */
+    /*justify-content: center;*/
+}
+nav > ul.menu {
+    display: flex;
+}
+ul.menu > li {
+    max-width: 200px;
+    border-right: 1px solid white;
+    /*padding: 20px;*/
+}
+ul.menu li > a {
+    text-decoration: none;
+    /* phu sieu lien ket nguyen dong*/
+    display: block;
+    padding: 20px;
+    color: white;
+}
+ul.menu > li > a:hover {
+    background-color: darkblue;
+    color: red;
+}
+ul.menu > li:last-child {
+    margin-left: auto;
+}
+/*menu con b1 an no di, b2 khi hover len hien ra tro lai va position no khong day dien tich cua vung len block*/
+.subcon {
+    display: none;
+}
+.sub:hover .subcon {
+    display: block;
+    position: absolute;
+}
+/*hien thi new len dau: dung position cai lon la relative va cai chu New la absolute*/

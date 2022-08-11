@@ -1,0 +1,74 @@
+header > h1 {
+    text-align: center;
+    text-transform: uppercase;/*in hoa*/
+}
+ul.menu {/*tất cả thành phần ul có thuộc tính class=menu*/
+    list-style-type: none;/*bỏ kí tự đánh dấu danh sách k có thứ tự*/
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;/*tô mâu*/
+    display: flex;/*làm cho nó thành 1 hàng ngang*/
+}
+ul.menu > li {/*tất cả các li bên trong (ul có thuộc tính class= menu*/
+    border-left: 1px solid white;/*tạo đường biên nằm bên trái*/
+    text-align: center;/*căn giữa chữ trong boder*/
+    min-width: 150px;
+    
+}
+ul.menu > li > a {
+    display: block;/*Thành phần hiển thị như một khối, đứng một hàng độc lập so với thành phần trước và sau nó.*/
+    padding: 18px 25px;/*khoảng cách xung quanh nội dung top=bot=18 right=left=25 */
+    text-decoration: none;/*Định dạng văn bản bình thường, đây là dạng mặc định.*/
+}
+ul.menu > li > a:hover {/*Hover qua link sẽ thấy được hiệu ứng*/
+    background-color: darkblue;
+    color: white;
+}
+ul.menu > li:last-child {/*chọn thành phần cuối cùng của thành phần cha.
+    Chỉ chọn thành phần có thành phần cha, những thành phần độc lập sẽ không được chọn.*/
+    margin-left: auto;
+}
+
+
+
+/* tạo menu con */
+.subcon {
+    display: none !important;/*Thành phần không hiển thị. và quan trọng nhất*/
+    position: absolute;/*Dùng để thiết lập vị trí của một phần tử nhưng nó sẽ luôn nằm trong một phần tử mẹ đang là relative.*/
+}
+.subs:hover .subcon {/*hover chọn, các thành phần khi di chuyển chuột qua chúng*/
+    display: block !important; /*Thành phần hiển thị như một khối, đứng một hàng độc lập so với thành phần trước và sau nó.*/
+}
+
+
+section.muchs { /*tất cả các thành phần của section có thuộc tính class=muchs */
+    background-color: lightgray;
+    margin-top: 20px; /* canh lề bên trên */
+   
+}
+
+div.much{
+    overflow: auto; /*Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi và xuất hiện thanh scroll, khi cuộn sẽ hiển thị text. Khi sử dụng thành phần này sẽ xuất hiện cả thanh scroll ngang và dọc.*/
+    padding: 10px;/*khoảng cách của văn bản với đường biên*/
+    border-bottom: 2px solid blueviolet;/*Xác định đường viền bên dưới.*/
+}
+
+
+div.much img {
+    width: 150px;
+    float: left;/*chỉ định 1 thành phần nổi lên để tạo không gian trống cho các thành phần phía sau di chuyển lên và chiếm chổ trống đó*/
+    transition: transform .5s;/* hiệu ứng sự thay đổi giá trị của 1 thuộc tính */
+}
+
+
+div.much img:hover {
+    transform: skew(20deg,45deg); /*dịch chuyển nghiêng ngang, dọc */
+}
+div.u {
+      margin-left: 10px !important;
+}
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
